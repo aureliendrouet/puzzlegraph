@@ -1,0 +1,33 @@
+Hanoi 4
+PuzzleNode A { pos:-3,1 }
+PuzzleNode B { pos:-2,1 }
+PuzzleNode C { pos:0,1 }
+PuzzleNode D { pos:-1,0 notify:C-I,C-H }
+PuzzleNode E { pos:-2,0 notify:G-D,G-C }
+PuzzleNode F { pos:-3,0 notify:B-E,B-G }
+PuzzleNode G { pos:-1,1 }
+PuzzleNode H { pos:1,1 }
+PuzzleNode I { pos:0,0 notify:H-J }
+PuzzleNode J { pos:2,1 }
+PuzzleEdge A-F {  }
+PuzzleEdge B-E {  }
+PuzzleEdge A-B {  }
+PuzzleEdge G-D {  }
+PuzzleEdge B-G {  }
+PuzzleEdge C-H {  }
+PuzzleEdge G-C {  }
+PuzzleEdge C-I {  }
+PuzzleEdge H-J {  }
+PuzzleGoal J {  }
+PuzzleGate B-E { on }
+PuzzleGate B-G { off }
+PuzzleToggle F { off }
+PuzzleToggle E { off }
+PuzzleToggle D { off }
+PuzzleGate G-D { on }
+PuzzleGate G-C { off }
+PuzzleGate H-J { off }
+PuzzleToggle I { off }
+PuzzleGate C-I { on }
+PuzzleGate C-H { off }
+PuzzlePlayer A {  }

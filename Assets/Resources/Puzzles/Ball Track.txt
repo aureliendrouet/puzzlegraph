@@ -1,0 +1,18 @@
+Ball Track
+PuzzleNode A { pos:0,0 }
+PuzzleNode B { pos:0,1 }
+PuzzleNode C { pos:0,2 }
+PuzzleNode D { pos:1,1 notify:B-C }
+PuzzleNode E { pos:1,0 }
+PuzzleEdge A-B {  }
+PuzzleEdge B-C {  }
+PuzzleEdge B-D {  }
+PuzzleEdge A-E {  }
+PuzzleEdge E-D {  }
+PuzzleNoBall A-B {  }
+PuzzleBallTrack E-D {  }
+PuzzleGoal C {  }
+PuzzlePlate D { off }
+PuzzleGate B-C { off }
+PuzzlePlayer B {  }
+PuzzleBall E {  }

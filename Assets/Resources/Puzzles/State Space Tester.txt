@@ -1,0 +1,17 @@
+State Space Tester
+PuzzleNode A { pos:-1,0 }
+PuzzleNode B { pos:0,0 }
+PuzzleNode C { pos:-1,1 }
+PuzzleNode D { pos:1,0 }
+PuzzleNode E { pos:0,1 }
+PuzzleNode F { pos:-2,0 }
+PuzzleEdge A-C {  }
+PuzzleEdge A-B {  }
+PuzzleEdge B-E {  }
+PuzzleEdge E-D {  }
+PuzzleEdge D-B {  }
+PuzzleEdge A-F {  }
+PuzzleEdge F-C {  }
+PuzzleGoal C {  }
+PuzzleWall A-B {  }
+PuzzlePlayer A {  }

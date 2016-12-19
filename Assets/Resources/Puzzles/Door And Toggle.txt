@@ -1,0 +1,12 @@
+Door And Toggle
+PuzzleNode A { pos:-1,0 }
+PuzzleNode B { pos:1,0 }
+PuzzleNode C { pos:1,1 }
+PuzzleNode D { pos:1,-1 notify:B-C }
+PuzzleEdge A-B {  }
+PuzzleEdge B-C {  }
+PuzzleEdge B-D {  }
+PuzzleGoal C {  }
+PuzzleToggle D { off }
+PuzzleGate B-C { off }
+PuzzlePlayer A {  }

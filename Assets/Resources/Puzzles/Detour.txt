@@ -1,0 +1,22 @@
+Detour
+PuzzleNode A { pos:0,0 }
+PuzzleNode B { pos:0,2 }
+PuzzleNode C { pos:2,0 notify:A-B }
+PuzzleNode D { pos:0,-2 notify:A-E }
+PuzzleNode E { pos:-2,0 }
+PuzzleEdge A-B {  }
+PuzzleEdge B-C {  }
+PuzzleEdge C-A {  }
+PuzzleEdge A-E {  }
+PuzzleEdge D-A {  }
+PuzzleEdge C-D {  }
+PuzzleWall B-C {  }
+PuzzleStep C-A {  }
+PuzzleGoal E {  }
+PuzzleStep D-A {  }
+PuzzleGate A-B { off }
+PuzzleToggle C { off }
+PuzzlePlate D { off }
+PuzzleGate A-E { off }
+PuzzlePlayer A {  }
+PuzzleBall B {  }

@@ -1,0 +1,21 @@
+Hazard Only Safe With Ball
+PuzzleNode A { pos:0,0 }
+PuzzleNode B { pos:-1,0 }
+PuzzleNode C { pos:-1,1 }
+PuzzleNode D { pos:0,-1 }
+PuzzleNode G { pos:-1,-1 }
+PuzzleNode E { pos:-1,-2 notify:D-G,A-B }
+PuzzleEdge A-B {  }
+PuzzleEdge B-C {  }
+PuzzleEdge A-D {  }
+PuzzleEdge D-G {  }
+PuzzleEdge G-E {  }
+PuzzleNoBall A-D {  }
+PuzzleGoal C {  }
+PuzzleNoBall G-E {  }
+PuzzleNoBall B-C {  }
+PuzzleBlockableHazard A-B { off }
+PuzzleBlockableHazard D-G { off }
+PuzzleToggle E { off }
+PuzzlePlayer A {  }
+PuzzleBall D {  }

@@ -1,0 +1,32 @@
+Bridge Go Round
+PuzzleNode A { pos:-2,0 notify:F }
+PuzzleNode B { pos:2,0 }
+PuzzleNode C { pos:1,1 }
+PuzzleNode D { pos:2,2 notify:E-H,H-A }
+PuzzleNode E { pos:-2,2 }
+PuzzleNode F { pos:0,1 }
+PuzzleNode G { pos:-1,1 }
+PuzzleNode H { pos:-2,1 notify:C }
+PuzzleEdge A-B {  }
+PuzzleEdge B-D {  }
+PuzzleEdge B-C {  }
+PuzzleEdge C-D {  }
+PuzzleEdge D-E {  }
+PuzzleEdge E-H {  }
+PuzzleEdge H-A {  }
+PuzzleEdge C-F {  }
+PuzzleEdge F-G {  }
+PuzzleGoal G {  }
+PuzzleVision B-D {  }
+PuzzleNoBall B-C {  }
+PuzzleNoBall C-D {  }
+PuzzleBridge C { off }
+PuzzleToggle D { off }
+PuzzlePlate H { off }
+PuzzlePlate A { off }
+PuzzleGate E-H { on }
+PuzzleGate H-A { off }
+PuzzleBridge F { off }
+PuzzlePlayer A {  }
+PuzzleBall B {  }
+PuzzleBall E {  }
